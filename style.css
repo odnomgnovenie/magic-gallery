@@ -7,12 +7,14 @@
     color: white;
 }
 
+/* Задаю параметры всего контейнера полностью */
 .container {
     height: 100vh;
     display: flex;
     flex-direction: column;
 }
 
+/* Задаю параметры шапки полностью */
 header {
     flex-basis: 10%; 
     display: flex;
@@ -20,6 +22,7 @@ header {
     background-size: contain;
 }
 
+/* Задаю параметры блоков контенера шапки */
 .header_menu {
     display: flex;
     justify-content: space-between;
@@ -27,20 +30,24 @@ header {
     margin: 30px;
 }
 
+/* Задаю параметры логотипа */
 .logo {
     display: flex;
 }
 
+/* Задаю параметры изображений */
 img {
     max-width: 20%;
     border-radius: 8px;
 }
 
+/* Задаю параметры выделения изображения цветом при наведении мышки */
 .image:hover {
     background-color: rgb(204, 196, 205);
     color: rgb(144, 204, 150);
 }
 
+/* Задаю параметры блока навигации в шапке */
 .header_nav {
     display: flex;
     align-items: center;
@@ -48,6 +55,7 @@ img {
     gap: 15px;
 }
 
+/* Задаю параметры блока меню в шапке */
 .menu a {
     font-size: 16px;
     margin-right: 35px;
@@ -65,6 +73,7 @@ img {
     margin-right: 0;
 }
 
+/* Задаю параметры всего контейнера с контентом */
 main {
     flex-grow: 1; 
     border: 1px solid;
@@ -73,12 +82,14 @@ main {
     background-size: contain;
 }
 
+/* Задаю параметры текстового контента контейнера с контентом */
 .content {
     flex-basis: 70%; 
     display: flex;
     flex-direction: column;
 }
 
+ /* Задаю параметры впервого бокса в контейнере с контентом */
 .main_box {
     padding-top: 10px;
     margin: 10px; 
@@ -87,6 +98,7 @@ main {
     background-color: rgb(206, 223, 237, 0.3);
 }
 
+
 .else_box1 {
     margin: 10px;
     display: flex;
@@ -94,6 +106,7 @@ main {
     gap: 12px; 
 }
 
+ /* Задаю параметры двух блоков впервого бокса в контейнере с контентом */
 .else {
     display: flex;
     justify-content: space-around; 
@@ -102,6 +115,7 @@ main {
     background-color: rgb(61, 36, 65, 0.7);
 }
 
+ /* Задаю параметры двух блоков второго бокса в контейнере с контентом */
 .else_box2 {
     margin: 10px; 
     display: flex;
@@ -109,6 +123,7 @@ main {
     gap: 12px; 
 }
 
+ /* Задаю параметры бокового блока */
 aside {
     flex-grow: 1;
     margin: 10px;
@@ -116,6 +131,7 @@ aside {
     display: block;
     background-color: rgb(206, 223, 237, 0.3);  
 }
+
 
 h2 {
     text-align: center;
@@ -126,6 +142,7 @@ h2 {
     background-color: rgb(206, 223, 237, 0.3);
 }
 
+ /* Задаю параметры футера */
 footer {
     border: 1px solid;
     flex-basis: 10%; 
@@ -135,6 +152,7 @@ footer {
     background-color: rgba(116, 66, 145, 0.5);
 }
 
+ /* Задаю параметры блокаов футера */
 .footer_box {
     text-align: center;
     padding: 5px;
@@ -142,6 +160,7 @@ footer {
     background-color:rgb(150, 103, 133, 0.5);
 }
 
+ /* Задаю параметры анимации блокам меню */
 .animation {
     animation: spin 4s linear infinite;
   }
