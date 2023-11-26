@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Magic Gallary</title>
+    <link rel="shortcut icon" href="/assets/image/icon.png" type="image/icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@100;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    < class="container">
+        <header>
+            <div class="header_menu">
+                <div class="logo">
+                    <a class="logo" href="mainpage.html" target="_blank">
+                        <img src="/assets/image/logo-magic.avif" alt="logo-magic">
+                    </a></div>
+                <div class="header_nav">
+                  <nav class="menu">
+                    <a href="spell.html" target="_blank"> Заклинания </a>
+                    <a href="curse.html" target="_blank"> Проклятия </a>
+                    <a href="help.html" target="_blank" > Помощь </a>
+                  </nav>
+                  <nav class="menunav">
+                    <a href="cabinet.html" target="_blank" >
+                      <svg class="animation" data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#083b43;stroke-linecap:round;stroke-linejoin:round;stroke-width:20px;}</style></defs><title/><path class="cls-1" d="M279.41,252.18,184.13,353.74a17.37,17.37,0,1,1-24.55-24.56L260,235l11.82,1.72Z"/><polygon class="cls-1" points="357.91 230.13 312.44 236.73 292.11 277.93 279.41 252.18 271.78 236.73 259.96 235.01 226.31 230.13 259.21 198.06 251.45 152.77 292.11 174.15 332.78 152.77 325.01 198.06 357.91 230.13"/></svg>
+                      </a>
+                      <a href="basket.html" target="_blank" >
+                          <svg class="animation" data-name="Layer 1" id="Layer_1" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><defs><style>.cls-1{fill:none;stroke:#083b43;stroke-linecap:round;stroke-linejoin:round;stroke-width:10px;}.cls-2{fill:#083b43;}</style></defs><title/><path class="cls-1" d="M293.63,182.64v-1.33h27.44V140.42H190.93v40.89h27.44v1.34a56.07,56.07,0,0,1-18.72,41.72A84.15,84.15,0,0,0,171.6,287c-.08,45.62,36.75,83.45,82.36,84.53a84.39,84.39,0,0,0,58.67-146.94A56.72,56.72,0,0,1,293.63,182.64Z"/><path class="cls-1" d="M171.63,289.44s34.34-26.23,70.46-14c41.45,14,72,14,96.87-3.8"/><circle class="cls-2" cx="230.23" cy="323.03" r="13.82"/><circle class="cls-2" cx="257.31" cy="310.53" r="7.65"/></svg>
+                      </a>
+                 </nav>
+                </div>
+            </div>
+        </header>
+    <main>
+        <div class="content">
+            <div class="main_box">
+                <h1>Волшебство начинается! </h1> 
+                <p>выбери свой инструмент и примени его</p>
+            </div>
+            <div class="else_box1">
+                <div class="else">
+                    <img class="image" src="/assets/image/hat.png">
+                    <img class="image" src="/assets/image/broomstick.png">
+                    <img class="image" src="/assets/image/gem.png">
+                </div>
+                <div class="else">
+                    <img class="image" src="assets/image/book.png">
+                    <img class="image" src="/assets/image/boot.png">
+                    <img class="image" src="/assets/image/cauldron.png">
+                </div>
+            </div>
+                <div class="else_box2">
+                    <div class="else">
+                        <img class="image" src="/assets/image/witch-hat.png">
+                        <img class="image" src="/assets/image/potion.png">
+                        <img class="image"  src="/assets/image/gem (1).png">
+                    </div>
+                    <div class="else">
+                        <img class="image" src="/assets/image/tarot.png">
+                        <img class="image" src="/assets/image/lamp.png">
+                        <img class="image" src="/assets/image/magic-wand (2).png">
+                    </div>
+                </div>
+            </div>
+        <aside> 
+                <h2>Регестрация</h2>
+                <form method="post">
+                    <div>
+                        <label for="pet-name">Ваше имя:</label>
+                        <input type="text" id="name" name="name" required/>
+                    </div>
+                    <div>
+                        <label for="email">Адрес электронной почты:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div>
+                        <label for="phone">Номер телефона:</label>
+                        <input type="tel" id="owner-phone" name="phone" pattern="+7[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{3}" required>
+                    </div>
+                    <div>
+                        <label for="magic-type">Вид магии:</label>
+                          <select name="magic-type" id="magic-type" required>
+                            <option value="">-- Выберите вид магии --</option>
+                            <option value="white">Белая</option>
+                            <option value="black">Черная</option>
+                            <option value="pink">Розовая</option>
+                            <option value="other">Другое</option>
+                          </select>
+                    </div>
+                    <div>
+                        <label for="sex"> Пол: </label>
+                            <input type="radio" name="sex" value="male" id="sex-male" required>
+                            <label for="sex-male"> Мужчина </label>
+                            <input type="radio" name="sex" value="female" id="sex-female" required>
+                            <label for="sex-female"> Женщина </label>
+                            <input type="radio" name="sex" value="magic" id="sex-magic" required>
+                            <label for="sex-magic"> Магич сущ-во </label>
+                    </div>
+                    <div> 
+                        <labei for="pet-corm"> Магический инструмент: </labei><br/>
+                        <input type="checkbox" name="pet-corm" value="1"/> Палочка
+                        <input type="checkbox" name="pet-corm" value="2"/> Шар<br/>
+                        <input type="checkbox" name="pet-corme" value="3"/> Кристалл
+                        <input type="checkbox" name="pet-corme" value="4"/> Шляпа<br/>
+                        <input type="checkbox" name="pet-corme" value="5"/> Другой корм <br/>
+                    </div>
+                    <div>
+                        <label for="asistant-name">Ассистент:</label>
+                        <input type="text" id="asistant-name" name="vasistant-name" required/>
+                    </div>
+                    <div>
+                        <label for="comment"> Комментарий</label><br/>
+                            <textarea name="comment" id="comment" cols="40" rows="3"></textarea>
+                    </div>
+                    <input type="submit" value="Сохранить">
+                </form>
+              </body>
+
+        </aside>
+    </main>
+    <footer>
+        <div class="footer_box"> Content</div>
+        <div class="footer_box"> Tools</div>
+        <dii class="footer_box"> Help</dii>
+        <div class="footer_box"> Company</div>
+    </footer>
+</body>
+</html>
